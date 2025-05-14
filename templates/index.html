@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WebScraper LLM Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Smart Web Scraper with LLM</h1>
+        <input type="text" id="url-input" placeholder="Enter Website URL">
+        <button onclick="scrapeWebsite()">Scrape & Summarize</button>
+        
+        <div id="result">
+            <h2>Scraped Data</h2>
+            <pre id="scraped"></pre>
+            
+            <h2>LLM Summary</h2>
+            <pre id="summary"></pre>
+        </div>
+    </div>
+    
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
